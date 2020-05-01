@@ -1,0 +1,25 @@
+:root{
+    --blue:#436bf5;
+    --pink: #cc3962;
+    --yellow: #f5c85a;
+}
+body{
+   
+}
+nav.navbar{
+    background: #fff;
+    border-bottom: 1px solid #666;
+    color:rgb(66, 68, 70);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: .025rem;
+    
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+
+    font-family: 'Raleway', sans-serif;
+}
