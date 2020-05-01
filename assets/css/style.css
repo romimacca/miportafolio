@@ -16,10 +16,12 @@ nav.navbar{
     letter-spacing: .025rem;
     
 }
+.navbar li.active a{
+    color: var(--blue) !important;
+}
 h1{
     font-family: 'Montserrat', sans-serif;
 }
 p{
-
     font-family: 'Raleway', sans-serif;
 }
