@@ -1,74 +1,526 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio - Romina Maccarini</title>
-    
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
     <!--CSS de Bootstrap 4.4.1-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
+
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Raleway:300,400,500,700&display=swap" rel="stylesheet">
- 
+
     <!--Mi estilo-->
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
 </head>
+
 <body>
     <!-- comienzo nav -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav id="navegation" class="navbar navbar-expand-lg fixed-top border-bottom navbar-light hadow-sm bg-white">
         <div class="container">
-            <a class="navbar-brand" href="#">Portafolio</a>
+            <a class="navbar-brand" href="#">Portafolio
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item active">
-                  <a class="nav-link mx-2" href="#">Sobre mi <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link mx-2" href="#">Experiencia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link mx-2" href="#">Contacto</a>
-                </li>
-              </ul>
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item d-none d-md-none d-lg-block d-xl-block ">
+                        <a class="nav-link mx-2" href="#sobremi">Sobre mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#trabajos">Trabajos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
     <!-- Comienzo content -->
-    <header>
-        
+    <header class="container-fluid py-5 pt-5 bg-img">
+
+        <section class=" container text-center">
+            <div class="position-absolute m-auto">
+                <h5 class="subtitle text-uppercase">Hola, yo soy</h5>
+                <div class="line mx-auto my-2"></div>
+                <h1 class="display-3 font-weight-bold">Romina</h1>
+            </div>
+        </section>
     </header>
-    <main>
+    <main data-spy="scroll" data-target="#navegation" data-offset="0">
+        <section id="sobremi" class="container d-none d-md-none d-lg-block d-xl-block py-5 ">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-12 my-5">
+                    <h3>Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió
+                        alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no
+                        parecen ni un poco creíbles</h3>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                    <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                        ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N.
+                        del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+                        de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino
+                        que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente
+                        igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las
+                        cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como
+                        por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                        <br><br> Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto
+                        aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45
+                        antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock,
+                    </p>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-6">
+                    <p>un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las
+                        palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al
+                        seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de
+                        las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El
+                        Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de
+                        éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum
+                        dolor sit amet..", viene de una linea en la sección 1.10.32
+                        <br><br> El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo
+                        para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum"
+                        por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en
+                        Inglés de la traducción realizada en 1914 por H. Rackham.</p>
+                </div>
 
+            </div>
+        </section>
+        <section id="experiencia" class="container py-5 border-top border-bottom border-secondary">
+            <div class="row my-5">
+                <div class="text-center col-md-12 col-lg-12 col-xl-12 mb-5 ">
+                    <h2>Experiencia</h2>
+                    <div class="line mx-auto my-2"></div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="media">
+                        <img src="assets/img/clay.png" class="align-self-start mr-3 rounded-circle"
+                            alt="Clay Technologies">
+                        <div class="media-body">
+                            <h6 class="text-uppercase">Clay Technologies</h6>
+                            <h4 class="font-weight-bold">Diseñadora UI/UX - Front End</h4>
+                            <p>Desde dic. 2015 - Actualidad (4 años, 6 meses)</p>
 
+                            <ul>
+                                <li class="mb-2"> Creación y Desarrollo de interfaz de usuario optimizado para
+                                    dispositivos móviles
+                                </li>
+                                <li class="mb-2"> Creación y Desarrollo de sitio web optimizado para dispositivos
+                                    móviles</li>
+                                <li class="mb-2"> Desarrollo de piezas gráficas ( Marketing, mailing, papelería
+                                    corporativa,
+                                    folletos, etc)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <div class="media">
+                        <img src="assets/img/jumpseller.png" class="align-self-start mr-3 rounded-circle"
+                            alt="Jumpseller">
+                        <div class="media-body">
+                            <h6 class="text-uppercase">Jumpseller</h6>
+                            <h4 class="font-weight-bold">Diseñadora Gráfica - Web developer</h4>
+                            <p>Desde sept. 2012 - ene. de 2015 (2 años, 5 meses)</p>
+
+                            <ul>
+                                <li class="mb-2"> Desarrollo y creación de Tiendas Online responsive</li>
+                                <li class="mb-2"> Rediseño del Panel de Control (front-end)</li>
+                                <li class="mb-2"> Soporte Online</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="habilidades" class="container py-5 ">
+            <div class="row">
+                <div class="text-center col-md-12 col-lg-12 col-xl-12 my-5">
+                    <h2>Habilidades</h2>
+                    <div class="line mx-auto my-2"></div>
+                </div>
+
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 text-center my-3">
+                                    <i class="fab fa-html5 fa-5x " data-toggle="tooltip" data-placement="bottom"
+                                        title="HTML5"></i>
+                                    <h5 class="my-3 font-weight-bold">Desarrolladora HTML</h5>
+                                    <p class="my-3 d-none d-md-none d-lg-block d-xl-block">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4 text-center my-3">
+                                    <i class="fab fa-css3-alt fa-5x" data-toggle="tooltip" data-placement="bottom"
+                                        title="CSS3"></i>
+                                    <h5 class="my-3 font-weight-bold">Desarrolladora CSS</h5>
+                                    <p class="my-3 d-none d-md-none d-lg-block d-xl-block">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4 text-center my-3">
+                                    <i class="fab fa-git-alt fa-5x" data-toggle="tooltip" data-placement="bottom"
+                                        title="GIT"></i>
+                                    <h5 class="my-3 font-weight-bold">Experiencia con Git</h5>
+                                    <p class="my-3 d-none d-md-none d-lg-block d-xl-block">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-4 col-lg-4 text-center my-3">
+                                    <i class="fab fa-sketch fa-5x" data-toggle="tooltip" data-placement="bottom"
+                                        title="Sketch"></i>
+                                    <h5 class="my-3 font-weight-bold">Maquetación con Sketch</h5>
+                                    <p class="my-3 d-none d-md-none d-lg-block d-xl-block">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4 text-center my-3">
+                                    <i class="fas fa-bezier-curve fa-4x mb-3" data-toggle="tooltip"
+                                        data-placement="bottom" title="Imagen Vectorial"></i>
+                                    <h5 class="my-3 font-weight-bold">Imagen corporativa</h5>
+                                    <p class="my-3 d-none d-md-none d-lg-block d-xl-block">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4 text-center my-3">
+                                    <i class="fab fa-adobe fa-5x" data-toggle="tooltip" data-placement="bottom"
+                                        title="Adobe"></i>
+                                    <h5 class="my-3 font-weight-bold">Programas de Adobe</h5>
+                                    <p class="my-3 d-none d-md-none d-lg-block d-xl-block">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trabajos" class="container-fluid py-5">
+            <div class="container">
+                <div class="text-center text-white col-md-12 col-lg-12 col-xl-12 my-5">
+                    <h2>Mis Trabajos</h2>
+                    <div class="line mx-auto my-2"></div>
+                </div>
+                <section class="row">
+                    <article class="col-sm-12 col-md-4 col-lg-4 my-3">
+                        <div class="card">
+                            <img src="assets/img/trabajos/meet_coffee.png" class="card-img-top" alt="card-1">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Meet&Coffe</h5>
+                                <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis
+                                    est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#meetcoffe">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 my-3">
+                        <div class="card">
+                            <img src="assets/img/trabajos/iguana_page.png" class="card-img-top" alt="card-2">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Iguana Page</h5>
+                                <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin
+                                    phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.
+                                </p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#iguanapage">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 my-3">
+                        <div class="card">
+                            <img src="assets/img/trabajos/suricata.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Suricata</h5>
+                                <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin
+                                    phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.
+                                </p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#suricata">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 my-3">
+                        <div class="card">
+                            <img src="assets/img/trabajos/cuppon.png" class="card-img-top" alt="card-1">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Cuppon</h5>
+                                <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis
+                                    est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#cuppon">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 my-3">
+                        <div class="card">
+                            <img src="assets/img/trabajos/ricomida.png" class="card-img-top" alt="card-2">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">Ricomida</h5>
+                                <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin
+                                    phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.
+                                </p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#ricomida">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 my-3">
+                        <div class="card">
+                            <img src="assets/img/trabajos/dmark.png" class="card-img-top" alt="card-3">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold">DMark</h5>
+                                <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin
+                                    phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.
+                                </p>
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#dmark">Ver más</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- modal meet&coffe -->
+                    <div class="modal fade" id="meetcoffe" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Meet&Coffe</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" src="assets/img/trabajos/meet_coffee.png" alt="Card image cap">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal iguanapage -->
+                    <div class="modal fade" id="iguanapage" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Iguana Page</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" src="assets/img/trabajos/iguana_page.png" alt="Card image cap">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal suricata -->
+                    <div class="modal fade" id="suricata" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Suricata</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" src="assets/img/trabajos/suricata.png" alt="Card image cap">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal cuppon -->
+                    <div class="modal fade" id="cuppon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Cuppon</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" src="assets/img/trabajos/cuppon.png" alt="Card image cap">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal ricomida -->
+                    <div class="modal fade" id="ricomida" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Ricomida</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" src="assets/img/trabajos/ricomida.png" alt="Card image cap">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- modal dmark -->
+                    <div class="modal fade" id="dmark" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">DMark</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="img-fluid mb-3" src="assets/img/trabajos/dmark.png" alt="Card image cap">
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                        culpa qui officia deserunt mollit anim id est laborum.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="contacto">
+            <div class="typeform-widget" data-url="https://rominamaccarini.typeform.com/to/d2jA9G" style="width: 100%; height: 100vh;"></div>
+            <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+            <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=d2jA9G&utm_source=typeform.com-01E6N47EXJ45Q0YFQC3VMF27B5-free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+        </section>
     </main>
     <!-- comienzo footer -->
-    <footer>
+    <footer class="container-fluid">
+        <div class="text-center text-light p-3">
+            <a href="https://github.com/romimacca" class="px-2"><i class="text-white fab fa-github fa-2x"></i></a>
+            <a href="https://www.facebook.com/romi.maccarini" class="px-2"><i class="text-white fab fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/romimacca" class="px-2"><i class="text-white fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/romimacca/" class="px-2"><i class="text-white fab fa-instagram fa-2x"></i></a>
+        </div>
 
     </footer>
 
-    <!--jQuery 3.4.1-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!--jQuery 3.3.1 sin slim-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
     <!--Popper JS 1.16.0-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    
+
     <!--Bootstrap JS 4.4.1-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    
+
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/69487f609e.js" crossorigin="anonymous"></script>
-  
+
     <!--Mi script-->
     <script src="assets/js/script.js"></script>
 
-    
 </body>
+
 </html>
