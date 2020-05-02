@@ -24,18 +24,20 @@ nav.navbar{
 .navbar .navbar-brand{
     color: var(--principal);
 }
+ul{
+    padding-left: 15px;
+}
 p, li{
     font-family: 'Raleway', sans-serif;
 }
 header{
     position: relative;
-    color: var(--principal);
+    text-shadow: 5px 3px 5px rgba(00,00,00,0.2);
 }
 .line{
     width: 100px;
     height: 2px;
     background:var(--principal);
-
 }
 header.bg-img{
     background-image: url('../img/bg-img-romi.jpg');
@@ -45,19 +47,32 @@ header.bg-img{
     padding-bottom: 10rem;
     height: 100vh;
 }
-
 header h2.subtitle{
     letter-spacing: .025rem;
 }
-
+header > section{
+    margin-top: 60vh;
+}
 footer{
     background: var(--celeste);
 }
 #trabajos{
-    background: var(--rosa);
+    background: var(--principal);
 }
 .modal-body{
     height: 70vh;
     overflow: scroll;
 }
-    
+.col-xs-4 {
+    width: 33% !important;
+}
+.card-img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 13rem;
+    box-sizing: border-box;
+}
+.card-img-top{
+    height: 100%;
+    object-fit: cover;
+}

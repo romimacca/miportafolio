@@ -1,6 +1,6 @@
 $(function(){
     $('body').scrollspy({ target: '#navegation' })
-    
+
     $("a").click(function(event){
       if (this.hash !== "") {
         event.preventDefault();
@@ -16,6 +16,6 @@ $(function(){
     });
 
     $('[data-toggle="tooltip"]').tooltip()
-  
+    $('.carousel').carousel()
   });
   
